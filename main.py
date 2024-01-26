@@ -1,4 +1,3 @@
-from time import clock
 from HAND_TRACKING_MODULE import HandTracker
 import cv2
 from math import sqrt
@@ -60,7 +59,9 @@ def main():
                     #print("scroll ",(-10))
                     pyautogui.scroll(-50)
 
-                
+                if dist1 > 110:
+                    # print("scroll ",(-10))
+                    pyautogui.scroll(50)
 
         cv2.imshow("Live",img)
         key=cv2.waitKey(1)

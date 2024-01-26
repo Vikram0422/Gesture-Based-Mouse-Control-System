@@ -5,14 +5,15 @@ import time
 
 
 class HandTracker:
-    def __init__(self,mode=False,Max_hands=2,detect_conf=0.5,track_conf=0.5):
+    def __init__(self,mode=False,Max_hands=2,detect_conf=0.5,track_conf=0.5,modec=1):
         self.mode=mode
         self.MaxHands=Max_hands
         self.dectect_conf=detect_conf
         self.track_conf=track_conf
+        self.modec= modec
 
         self.mpHands=mp.solutions.hands
-        self.hands=self.mpHands.Hands(self.mode,self.MaxHands,self.dectect_conf,self.track_conf)
+        self.hands=self.mpHands.Hands(self.mode,self.MaxHands,self.modec,self.dectect_conf,self.track_conf)
         self.mpdraw = mp.solutions.drawing_utils
 
 
