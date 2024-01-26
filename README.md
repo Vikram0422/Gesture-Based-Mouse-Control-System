@@ -1,9 +1,9 @@
-# Hand tracking Project
+# Gesture-Based Mouse Control System
 
-This is a project to track hand hand movements
+This project utilizes Python to track hand movements, providing an innovative system for mouse control.
 
 # Features
 
-- detect hands
-- track fingers movements
-- calculate fingers's posistions
+- Hand detection
+- Finger movement tracking
+- Finger position calculation
